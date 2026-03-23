@@ -315,7 +315,7 @@ export default function App(){
     setTrendLoading(false);
   },[]);
 
-  useEffect(()=>{fetchTrending(trendPeriod);},[trendPeriod]);
+  useEffect(()=>{fetchTrending(trendPeriod);},[trendPeriod, fetchTrending]);
 
   const searchMovies=async()=>{
     if(!search.trim())return;
